@@ -1,8 +1,18 @@
-export default function Header() {
+export default function Header({appName, appDescription}) {
   return (
     <header className="header">
-        <h1>Product Hub</h1>
-        <p>Discover and manage your products efficiently.</p>
+        <h1>{appName}</h1>
+        <p>{appDescription}</p>
     </header>
   )
 }
+
+
+// export default function Header(props) {
+//   return (
+//     <header className="header">
+//         <h1>{props.appName}</h1>
+//         <p>{props.appDescription}</p>
+//     </header>
+//   )
+// }

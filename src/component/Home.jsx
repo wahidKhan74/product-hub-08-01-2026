@@ -1,21 +1,16 @@
+import Products from "./Products";
+
 export default function Home() {
+    const products = [
+        { id: 1, name: "Apple Laptop", description: "Apple Laptop Description" },
+        { id: 2, name: "Apple ipod", description: "Apple ipod Description" },
+        { id: 3, name: "Apple Watch", description: "Apple Watch Description" },
+    ]; 
+
     return (
         <main className="home">
             <h2>Product List</h2>
-            <div className="product-list">
-                <div className="product-card">
-                    <h3>Product 1</h3>
-                    <p>Description for product 1.</p>
-                </div>
-                <div className="product-card">
-                    <h3>Product 2</h3>
-                    <p>Description for product 2.</p>
-                </div>
-                <div className="product-card">
-                    <h3>Product 3</h3>
-                    <p>Description for product 3.</p>
-                </div>
-            </div>
+            <Products products={products} />
         </main>
     )
 }
