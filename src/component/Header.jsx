@@ -1,10 +1,22 @@
 export default function Header({appName, appDescription}) {
-  return (
-    <header className="header">
-        <h1>{appName}</h1>
-        <p>{appDescription}</p>
-    </header>
-  )
+
+  const isLoggedIn = false;
+
+  if (isLoggedIn) {
+    return (
+      <header className="header">
+          <h1>Welcome Back to {appName}!</h1>
+          <p>{appDescription}</p>
+      </header>
+    )
+  } else {
+    return (
+      <header className="header">
+          <h1>{appName}</h1>
+          <p>{appDescription}</p>
+      </header>
+    )
+  }
 }
 
 
