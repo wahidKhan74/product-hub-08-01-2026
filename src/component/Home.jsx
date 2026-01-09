@@ -5,6 +5,7 @@ export default function Home() {
         { id: 1, name: "Apple Laptop", description: "Apple Laptop Description" },
         { id: 2, name: "Apple ipod", description: "Apple ipod Description" },
         { id: 3, name: "Apple Watch", description: "Apple Watch Description" },
+         { id: 4, name: "Apple TV", description: "Apple TV Description" },
     ]; 
 
     function handleAddProduct() {
